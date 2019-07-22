@@ -6,7 +6,7 @@
     margin-top: 2rem;
 }
 
-.name-input::placeholder, .custom-file-label {
+#name-input::placeholder, .custom-file-label {
     color: #AAA;
 }
 

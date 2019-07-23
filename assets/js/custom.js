@@ -29,6 +29,8 @@ $(document).ready(function() {
             $("#question3").val(3);
         }).then(function(res) {
             console.log(res);
+            $("#friend-modal-body").text(res);
+            $("#friend-result").modal("show");
         });
 
     });

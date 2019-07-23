@@ -1,3 +1,7 @@
+form {
+    margin-bottom: 2rem;
+}
+
 .form-control-file::after {
     padding-left: 5rem;
 }

@@ -1,6 +1,6 @@
 # coursework11-friend-finder
 Vanderbilt Coding Boot Camp - Friend Finder (NodeJS &amp; ExpressJS)  
-Live Link: 
+Live Link: https://protected-cliffs-41951.herokuapp.com/
 
  - - - 
 
@@ -11,7 +11,7 @@ Friend Finder will match users to others based on their provided responses. Matc
 
 ## Instructions  
 
-1. Navigate to ![Friend Finder App Link]().  
+1. Navigate to ![Friend Finder App Link](https://protected-cliffs-41951.herokuapp.com/).  
 2. Click "Find Me a Friend" to begin the survey.  
 3. Use the range sliders to indicate your response to each statement.  
    * 1 = Strongly Disagree  

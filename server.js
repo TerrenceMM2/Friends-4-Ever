@@ -7,6 +7,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Allows static files - JS and CSS - to be used as referenced in server-provided HTML files.
 app.use("/assets", express.static("assets"));
 
 require("./app/routing/apiRoutes")(app);

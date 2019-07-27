@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
         integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
 
@@ -25,17 +26,16 @@
 
     <div class="container">
 
-        <form>
+        <form action="/api/friends" method="post" enctype="multipart/form-data">
 
             <div class="form-group">
                 <input id="name-input" type="text" class="form-control" placeholder="Name">
             </div>
 
             <div class="form-group">
-                <div class="custom-file">
-                    <label for="photo-file" class="custom-file-label">Photo Upload</label>
-                    <input type="file" class="custom-file-input form-control-file" id="photo-file">
-                </div>
+                <input id="photo-input" type="text" class="form-control" placeholder="Link to Photo">
+                <small>Please provide a URL to a publicly-accessible URL. For example, a LinkedIn, Facebook, or Twitter
+                    profile photo.</small>
             </div>
 
             <div id="question-group" class="form-group">
@@ -67,7 +67,8 @@
                         <small class="float-left">Strongly Agree</small></div>
                 </div>
 
-                <label for="question4"><strong>#4:</strong> You would prefer to stay home on a Friday night than go out.</label><br>
+                <label for="question4"><strong>#4:</strong> You would prefer to stay home on a Friday night than go
+                    out.</label><br>
                 <div class="slider-container">
                     <div class="slider-label text-right clearfix"><span>1</span>
                         <small class="float-right">Strongly Disagree</small></div>
@@ -94,7 +95,8 @@
                         <small class="float-left">Strongly Agree</small></div>
                 </div>
 
-                <label for="question7"><strong>#7:</strong> When on vacation, you prefer to travel thousands of miles to a new, exotic location rather than staying close to home.</label><br>
+                <label for="question7"><strong>#7:</strong> When on vacation, you prefer to travel thousands of miles to
+                    a new, exotic location rather than staying close to home.</label><br>
                 <div class="slider-container">
                     <div class="slider-label text-right clearfix"><span>1</span>
                         <small class="float-right">Strongly Disagree</small></div>
@@ -103,7 +105,8 @@
                         <small class="float-left">Strongly Agree</small></div>
                 </div>
 
-                <label for="question8"><strong>#8:</strong> You pick "truth" more often than "dare" when playing "Truth or Dare".</label><br>
+                <label for="question8"><strong>#8:</strong> You pick "truth" more often than "dare" when playing "Truth
+                    or Dare".</label><br>
                 <div class="slider-container">
                     <div class="slider-label text-right clearfix"><span>1</span>
                         <small class="float-right">Strongly Disagree</small></div>
@@ -131,7 +134,7 @@
                 </div>
             </div>
 
-            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            <button id="submit" type="submit" class="btn btn-primary btn-lg">Submit</button>
 
         </form>
 
@@ -154,8 +157,12 @@
                     </button>
                 </div>
                 <div class="modal-body" id="friend-modal-body">
+                    <p id="friend-modal-name"></p>
+                    <img id="friend-modal-photo">
                 </div>
+
                 <div class="modal-footer">
+                    <small id="disclaimer">The following individual has given consent to using their likeness for this app. For the purposes of this demonstration, their responses have been fabricated and in no way reflect the individual's official views or opinions.</small>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>

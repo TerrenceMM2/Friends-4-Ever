@@ -4,7 +4,7 @@ $(document).ready(function() {
         event.preventDefault();
 
         var friendName = $("#name-input").val().trim();
-        var friendPhoto = $("#photo-file").val();
+        var friendPhoto = $("#photo-input").val();
         var response1 = $("#question1").val();
         var response2 = $("#question2").val();
         var response3 = $("#question3").val();
@@ -37,11 +37,12 @@ $(document).ready(function() {
 
         $.post("/api/friends", newFriend, function() {
             $("#name-input").val("");
-            $("#photo-file").val("");
+            $("#photo-input").val("");
             $(".slider").val(3);
         }).then(function(res) {
             console.log(res);
-            $("#friend-modal-body").text(res);
+            $("#friend-modal-name").text(res.name);
+            $("#friend-modal-photo").attr("src", res.photo);
             $("#friend-result").modal("show");
         });
 

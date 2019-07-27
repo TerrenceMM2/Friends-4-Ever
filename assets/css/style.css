@@ -1,3 +1,13 @@
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+#survey-button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+}
+
 form {
     margin-bottom: 2rem;
 }
@@ -10,7 +20,7 @@ form {
     margin-top: 2rem;
 }
 
-#name-input::placeholder, .custom-file-label {
+#name-input::placeholder, #photo-input::placeholder {
     color: #AAA;
 }
 
@@ -40,7 +50,7 @@ small {
 }
 
 .slider::-webkit-slider-thumb {
-    background: var(--info);
+    background: var(--teal);
 }
 
 .slider-label {
@@ -50,6 +60,35 @@ small {
 
 .slider-label > span {
     margin: 0;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+}
+
+#friend-modal-body {
+    text-align: center;
+}
+
+#friend-modal-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#friend-modal-photo {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
+
+#disclaimer {
+    position: absolute;
+    padding: 15px;
+    left: 0;
+    font-size: 55%;
+    width: 80%;
 }
 
 .admin-controls {

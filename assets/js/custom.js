@@ -33,14 +33,11 @@ $(document).ready(function() {
             ]
         };
 
-        console.log(newFriend);
-
         $.post("/api/friends", newFriend, function() {
             $("#name-input").val("");
             $("#photo-input").val("");
             $(".slider").val(3);
         }).then(function(res) {
-            console.log(res);
             $("#friend-modal-name").text(res.name);
             $("#friend-modal-photo").attr("src", res.photo);
             $("#friend-result").modal("show");

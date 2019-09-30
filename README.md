@@ -26,6 +26,11 @@ Friends4Ever will match users to others based on their provided responses. Match
 
 - - - 
 
+## Screenshot  
+![Friends 4 Ever Screenshot](../media/friends-4-ever-screenshot.png?raw=true)  
+
+- - -
+
 ### Contribute  
 
 To get started ...

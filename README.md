@@ -1,5 +1,4 @@
-# coursework11-friend-finder
-Vanderbilt Coding Boot Camp - Friend Finder (NodeJS &amp; ExpressJS)  
+# Friends 4 Ever
 Live Link: https://friends4ever.herokuapp.com/
 
  - - - 
